@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+dependencies {
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.12', version: '2.5.12'
+    testCompile group: 'com.typesafe.akka', name: 'akka-testkit_2.12', version: '2.5.12'
+    compile group: 'com.typesafe.akka', name: 'akka-stream_2.12', version: '2.5.12'
+    testCompile group: 'com.typesafe.akka', name: 'akka-stream-testkit_2.12', version: '2.5.12'
+    compile group: 'com.typesafe.akka', name: 'akka-cluster_2.12', version: '2.5.12'
+}
+
+
+group 'akka'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
